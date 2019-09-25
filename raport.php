@@ -4,7 +4,7 @@
 	  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Latihan 1</title>
+    <title>Raport Bootstrap</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
 <body>
@@ -78,22 +78,22 @@
                <center>
                   <h1><u>Output</u></h1>
                </center>
-               <?php
-               if (isset($_POST['simpan'])) {
-                  $a = $_POST['nama'];
-                  $b = $_POST['kelas'];
-               }
-               ?>
             <div class="table-responsive">
                <table class="table">
                   <tr>
                      <th>Nama</th>
                      <th>Kelas</th>
                   </tr>
+                      <?php
+                      if (isset($_POST['simpan'])) {
+                      $a = $_POST['nama'];
+                      $b = $_POST['kelas'];
+                      ?>
                   <tr>
                      <td><?php echo $a; ?></td>
                      <td><?php echo $b; ?></td>
                   </tr>
+                <?php } ?>
                </table>
             </div>
       	</div>
